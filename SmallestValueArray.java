@@ -1,12 +1,12 @@
 package methoid;
 
 public class SmallestValueArray {
-    public static int minArray(int[] array) {
-        int min = array[0];
+    public static int minValue(int[] num) {
+        int min = num[0];
         int index = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] < min) {
-                min = array[i];
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] < min) {
+                min = num[i];
                 index = i;
             }
         }
@@ -14,8 +14,8 @@ public class SmallestValueArray {
     }
 
     public static void main(String[] args) {
-        int[] array = {11, 2, 3, 4, 5, 6};
-        int index = minArray(array);
-        System.out.println("The smallest element value array: " + array[index]);
+        int[] number = {11, 2, 3, 4, 5, 6};
+        int index = minValue(number);
+        System.out.println("The smallest element value array: " + number[index]);
     }
 }
