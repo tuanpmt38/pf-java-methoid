@@ -17,7 +17,7 @@ public class CaculactorInterrest {
         System.out.println("Principal pay in " + months + " months: " + capital);
         range = 0;
         double first_year_interest = calculateInterest(loans, interest_rate, range);
-        System.out.println("First year interest: " + first_year_interest);
+        System.out.println("First year interest:  " + first_year_interest);
         range = 0.035;
         double next_year_interest = calculateInterest(loans, interest_rate, range);
         System.out.println("Next year interest: " + next_year_interest);
