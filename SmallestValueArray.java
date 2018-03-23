@@ -16,6 +16,6 @@ public class SmallestValueArray {
     public static void main(String[] args) {
         int[] array = {11, 2, 3, 4, 5, 6};
         int index = minArray(array);
-        System.out.println("The smallest element value: " + array[index]);
+        System.out.println("The smallest element value array: " + array[index]);
     }
 }
