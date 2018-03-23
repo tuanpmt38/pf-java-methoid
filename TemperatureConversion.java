@@ -19,8 +19,8 @@ public class TemperatureConversion {
         int choice;
         do{
             System.out.println("Menu:");
-            System.out.println("1. Selsius to fahrenheit");
-            System.out.println("2. fahrenheit to Selcius");
+            System.out.println("1. Selsius to fahrenheit ");
+            System.out.println("2. fahrenheit to Selcius ");
             System.out.println("0. Exit ");
             System.out.println("Enter choice:");
             choice=scanner.nextInt();
