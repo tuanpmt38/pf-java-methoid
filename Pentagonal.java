@@ -12,10 +12,9 @@ public class Pentagonal {
             number = scanner.nextInt();
             if (number < 1)
                 System.out.println("N must be greater than 1:");
-            int n = getPentagonalNumber(number);
-            System.out.println("The number Pentagonl:" + n);
+            System.out.println("The number Pentagonal:" + getPentagonalNumber(number));
+            break;
         } while (number >= 1);
-
     }
 
     public static int getPentagonalNumber(int n) {
