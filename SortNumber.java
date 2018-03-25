@@ -1,12 +1,10 @@
 package methoid;
 
-import java.util.Scanner;
-
 public class SortNumber {
     public static void main(String[] args) {
         int [] number= {6,7,3};
         sortNumber(number);
-        System.out.println("Dãy số được sắp xếp tăng dần: ");
+        System.out.println("The sequence number is gradually increased: " );
         display(number);
     }
     public static void display(int [] arr) {
