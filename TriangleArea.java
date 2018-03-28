@@ -28,8 +28,8 @@ public class TriangleArea {
     }
 
     public static double calculateTriangle(double edgeA, double edgeB, double edgeC) {
-        double p = (edgeA + edgeB + edgeC) / 3;
-        double area = p * (p - edgeA) * (p - edgeB) * (p - edgeC);
+        double halfprimeter = (edgeA + edgeB + edgeC) / 3;
+        double area = halfprimeter * (halfprimeter - edgeA) * (halfprimeter - edgeB) * (halfprimeter - edgeC);
         return Math.sqrt(area);
     }
 }
