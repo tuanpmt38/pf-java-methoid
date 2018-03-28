@@ -3,6 +3,20 @@ package methoid;
 import java.util.Scanner;
 
 public class DayofYear {
+    public static boolean isValue(int year) {
+        boolean checkyear4 = year % 4 == 0;
+        if (checkyear4) {
+            boolean checkyear100 = year % 100 == 0;
+            if (checkyear100) {
+                boolean checkyear400 = year % 400 == 0;
+                if (checkyear400) return true;
+            } else {
+                return true;
+            }
+        }
+        return false;
+
+    }
     public static void main(String[] args) {
         int year_begin;
         int year_end;
@@ -19,20 +33,5 @@ public class DayofYear {
                 System.out.println("Year: " + i + " has 365 day");
             }
         }
-    }
-
-    public static boolean isValue(int year) {
-        boolean checkyear4 = year % 4 == 0;
-        if (checkyear4) {
-            boolean checkyear100 = year % 100 == 0;
-            if (checkyear100) {
-                boolean checkyear400 = year % 400 == 0;
-                if (checkyear400) return true;
-            } else {
-                return true;
-            }
-        }
-        return false;
-
     }
 }
