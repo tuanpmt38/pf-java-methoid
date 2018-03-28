@@ -28,7 +28,7 @@ public class TriangleArea {
     }
 
     public static double calculateTriangle(double edgeA, double edgeB, double edgeC) {
-        double halfprimeter = (edgeA + edgeB + edgeC) / 3;
+        double halfprimeter = (edgeA + edgeB + edgeC) / 2;
         double area = halfprimeter * (halfprimeter - edgeA) * (halfprimeter - edgeB) * (halfprimeter - edgeC);
         return Math.sqrt(area);
     }
