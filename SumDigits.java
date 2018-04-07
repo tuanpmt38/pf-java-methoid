@@ -4,19 +4,19 @@ import java.util.Scanner;
 
 public class SumDigits {
     public static void main(String[] args) {
-        int n;
+        int number;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Input digits n: ");
-        n = scanner.nextInt();
-        System.out.println("Display digits n: " + totalDigitsOfNumber(n));
+        System.out.println("Input digits number: ");
+        number = scanner.nextInt();
+        System.out.println("Display digits n: " + totalDigitsOfNumber(number));
     }
 
-    public static int totalDigitsOfNumber(int n) {
+    public static int totalDigitsOfNumber(int number) {
         int total = 0;
-        do {
-            total = total + n % 10;
-            n = n / 10;
-        } while (n > 0);
+        while (number > 0){
+            total = total + number % 10;
+            number = number / 10;
+        }
         return total;
     }
 
